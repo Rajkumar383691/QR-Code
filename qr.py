@@ -1,3 +1,6 @@
+
+
+
 #Modules:
 
 from qrcode import make
@@ -15,6 +18,47 @@ blue="\033[1;94m"
 purple="\033[1;95m"   
 cyan="\033[1;96m"
 end="\033[0m" 
+#Login Access:
+
+def login():
+    access=True
+    while access:
+        logo()
+        user=input(cyan+'username :'+green)
+        if user == 'Yasin Arafat Ajad':
+                print(end)
+                system('clear')
+                logo()
+                pw=input(end+cyan+'password :'+green) 
+                if pw == 'Tama Bangali':
+                     system('clear')
+                     logo()
+                     print(end+purple+'Checking....'+end)  
+                     sleep(3)
+                     system('clear')
+                     logo()
+                     print(green+'Login Succesful..!!!',end)
+                     sleep(2)
+                     system('clear')
+                     break
+                
+                if pw!='Tama Bangali':
+                    system('clear')
+                    logo()
+                    print(end,purple,'Checking....',end)
+                    sleep(2)
+                    system('clear')
+                    logo()
+                    print(end,red,'Sorry!   Wrong Password..!!!',end) 
+                    sleep(3)
+                    system('clear')
+
+        if user!='Yasin Arafat Ajad':
+            print(end,red,'Sorry!   Wrong Username..!!!',end)
+            sleep(3)
+            system('clear')
+            
+                
 #Logo :
 def logo():
     Logo=f"""
@@ -35,12 +79,14 @@ def logo():
  {yellow}•••••••••{end}{cyan}[Created by:// RUPKOTHAR RAJKUMAR]{end}{yellow}•••••••••
 
 
-"""
+{end}"""
     print(Logo)
 
 #Information in QR Code
 system('clear')
 sleep(1)
+login()
+system('clear')
 logo()
 sleep(1)
 information=input(yellow+'Give Informaion in QR Code : '+end+green) 
