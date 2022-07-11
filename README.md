@@ -3,24 +3,26 @@
 
 # MANUAL COMMAND:
 
-pip install qrcode
 
 
-pip install pillow
+# pip install qrcode
 
 
-git clone https://github.com/Rajkumar383691/QR-Code
+# pip install pillow
 
 
-cd QR-Code
+# git clone https://github.com/Rajkumar383691/QR-Code
 
 
-python qr.py
+# cd QR-Code
+
+
+# python qr.py
 
 
 
 
-#SINGLE COMMAND
+# SINGLE COMMAND
 
 
 pip install qrcode;pip install pillow;git clone https://github.com/Rajkumar383691/QR-Code;cd QR-Code;python qr.py
